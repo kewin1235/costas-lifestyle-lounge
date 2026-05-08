@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Costa's Lifestyle Lounge Postmasburg</title>
+  <link rel="icon" type="image/png" href="/media/logo/costas-logo.png">
+  <meta name="description" content="Photos and videos from inside Costa's Lifestyle Lounge — the lounge, rooftop, food, events, VVIP areas and Postmasburg nightlife." />
+  <meta name="keywords" content="Costa's Lifestyle Lounge photos, Postmasburg lounge gallery, Boichoko nightlife, Northern Cape lounge" />
+  <meta property="og:title" content="Gallery | Costa's Lifestyle Lounge Postmasburg" />
+  <meta property="og:description" content="Photos and videos from inside Costa's Lifestyle Lounge — the lounge, rooftop, food, live events, VVIP areas and Postmasburg nightlife." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0a0705" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="nav-shell">
+    <nav class="nav">
+      <a href="index.html" class="nav-brand">
+        <img class="nav-logo" src="/media/logo/costas-logo.png" alt="Costa's Lifestyle Lounge logo">
+        <span class="nav-brand-text">Costa's<small>Lifestyle Lounge</small></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="restaurant.html">Restaurant &amp; Bar</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="venue-hire.html">Venue Hire</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta"><a href="https://wa.me/27630501133" class="btn btn-primary">Book Now</a></div>
+      <button class="nav-toggle"><span></span></button>
+    </nav>
+  </div>
+  <div class="mobile-drawer" aria-hidden="true">
+    <a href="index.html">Home</a><a href="about.html">About</a>
+    <a href="restaurant.html">Restaurant &amp; Bar</a><a href="events.html">Events</a>
+    <a href="venue-hire.html">Venue Hire</a><a href="gallery.html">Gallery</a>
+    <a href="reviews.html">Reviews</a><a href="contact.html">Contact</a>
+    <a href="https://wa.me/27630501133" class="btn btn-primary">Chat on WhatsApp</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span>Gallery</div>
+      <h1>The <em>Gallery</em></h1>
+      <p>Photos and videos from inside the lounge, the rooftop, the kitchen, the dance floor and the nights to remember.</p>
+    </div>
+  </section>
+
+  <!-- FEATURED SLIDESHOW -->
+  <section style="padding-bottom: 2rem;">
+    <div class="container">
+      <div class="slideshow reveal">
+        <div class="slides">
+          <div class="slide active"><img class="slide-bg" src="/media/images/red-lounge.jpg" alt="Red lounge interior at Costa's"><div class="slide-overlay"><p>Inside</p><h3>The Lounge</h3></div></div>
+          <div class="slide"><img class="slide-bg" src="/media/images/pool-day.jpg" alt="Costa's rooftop pool in daytime"><div class="slide-overlay"><p>Above</p><h3>The Rooftop</h3></div></div>
+          <div class="slide"><img class="slide-bg" src="/media/images/mogodu-monday.jpg" alt="Mogodu Monday at Costa's"><div class="slide-overlay"><p>The Kitchen</p><h3>The Food</h3></div></div>
+          <div class="slide"><img class="slide-bg" src="/media/images/vip-drinks.jpg" alt="VIP beverages at Costa's"><div class="slide-overlay"><p>Live</p><h3>The Events</h3></div></div>
+          <div class="slide"><img class="slide-bg" src="/media/images/premium-lounge.jpg" alt="Premium lounge experience"><div class="slide-overlay"><p>Reserved</p><h3>The VVIP</h3></div></div>
+          <div class="slide"><img class="slide-bg" src="/media/images/pool-night.jpg" alt="Costa's rooftop pool at night"><div class="slide-overlay"><p>After Dark</p><h3>The Nightlife</h3></div></div>
+        </div>
+        <div class="slide-arrows">
+          <button class="slide-arrow prev" aria-label="Previous">‹</button>
+          <button class="slide-arrow next" aria-label="Next">›</button>
+        </div>
+        <div class="slide-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTERABLE GRID -->
+  <section style="padding-top: 3rem;">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Browse</span>
+        <h2>Inside <em class="italic-display gold">Costa's</em></h2>
+        <p>Tap any image to view it. Filter by category to find exactly what you're looking for.</p>
+      </div>
+
+      <div class="gallery-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="lounge">Lounge</button>
+        <button class="filter-btn" data-filter="rooftop">Rooftop</button>
+        <button class="filter-btn" data-filter="food">Food</button>
+        <button class="filter-btn" data-filter="events">Events</button>
+        <button class="filter-btn" data-filter="vvip">VVIP</button>
+        <button class="filter-btn" data-filter="nightlife">Nightlife</button>
+      </div>
+
+      <!-- REPLACE: each .item-bg div with an <img src="public/media/gallery/gallery-N.jpg"> tag.
+                   Keep the data-cat attribute on the parent .gallery-item to keep filtering working. -->
+      <div class="gallery-grid">
+        <div class="gallery-item wide reveal" data-cat="lounge">
+          <img class="item-bg slide-bg" src="/media/images/premium-lounge.jpg" alt="Premium lounge seating" />
+          <span class="item-tag">Lounge</span>
+        </div>
+        <div class="gallery-item reveal" data-cat="rooftop">
+          <img class="item-bg slide-bg" src="/media/images/pool-day.jpg" alt="Rooftop pool daytime" />
+          <span class="item-tag">Rooftop</span>
+        </div>
+        <div class="gallery-item reveal" data-cat="food">
+          <img class="item-bg slide-bg" src="/media/images/mogodu-monday.jpg" alt="Mogodu Monday" />
+          <span class="item-tag">Food</span>
+        </div>
+        <div class="gallery-item reveal" data-cat="vvip">
+          <img class="item-bg slide-bg" src="/media/images/red-lounge.jpg" alt="VVIP lounge seating" />
+          <span class="item-tag">VVIP</span>
+        </div>
+        <div class="gallery-item reveal" data-cat="events">
+          <img class="item-bg slide-bg" src="/media/images/vip-drinks.jpg" alt="VIP drinks service" />
+          <span class="item-tag">Events</span>
+        </div>
+        <div class="gallery-item reveal" data-cat="nightlife">
+          <img class="item-bg slide-bg" src="/media/images/pool-night.jpg" alt="Nighttime rooftop pool" />
+          <span class="item-tag">Nightlife</span>
+        </div>
+        <div class="gallery-item reveal" data-cat="lounge">
+          <img class="item-bg slide-bg" src="/media/images/premium-lounge.jpg" alt="Costa's lounge interior" />
+          <span class="item-tag">Lounge</span>
+        </div>
+        <div class="gallery-item wide reveal" data-cat="rooftop">
+          <img class="item-bg slide-bg" src="/media/images/pool-night.jpg" alt="Evening rooftop scene" />
+          <span class="item-tag">Rooftop</span>
+        </div>
+        <div class="gallery-item reveal" data-cat="food">
+          <img class="item-bg slide-bg" src="/media/images/mogodu-monday.jpg" alt="Food service at Costa's" />
+          <span class="item-tag">Food</span>
+        </div>
+        <div class="gallery-item reveal" data-cat="events">
+          <img class="item-bg slide-bg" src="/media/images/vip-drinks.jpg" alt="Events drink service" />
+          <span class="item-tag">Events</span>
+        </div>
+        <div class="gallery-item reveal" data-cat="vvip">
+          <img class="item-bg" src="/media/images/vip-drinks.jpg" alt="VVIP bottle service at Costa's" />
+          <span class="item-tag">VVIP</span>
+        </div>
+        <div class="gallery-item reveal" data-cat="nightlife">
+          <img class="item-bg" src="/media/images/costas-lounge-extra.jpg" alt="Costa's nightlife" />
+          <span class="item-tag">Nightlife</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO SECTION -->
+  <section style="background: linear-gradient(180deg, var(--black), var(--rich-black));">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">In Motion</span>
+        <h2>Costa's <em class="italic-display gold">on video</em>.</h2>
+        <p>Watch the venue come alive. More videos on our <a href="https://www.facebook.com/costaslifestylelounge" class="gold" target="_blank" rel="noopener">Facebook</a> and <a href="https://www.tiktok.com/discover/costas-lifestyle-lounge" class="gold" target="_blank" rel="noopener">TikTok</a>.</p>
+      </div>
+
+      <div class="grid grid-3 reveal">
+        <div style="aspect-ratio: 9/16; border-radius: var(--radius); overflow: hidden; border: 1px solid rgba(212,165,116,.18); position: relative; background: var(--rich-black);">
+          <img src="/media/images/red-lounge.jpg" alt="Costa's lounge vibe" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+          <div style="position:absolute;inset:0;display:grid;place-items:center;background:rgba(10,7,5,.45);">
+            <a href="https://www.facebook.com/costaslifestylelounge" target="_blank" rel="noopener" style="width:64px;height:64px;border-radius:50%;background:rgba(212,165,116,.9);display:grid;place-items:center;color:var(--black);font-size:1.5rem;text-decoration:none;">▶</a>
+          </div>
+        </div>
+        <div style="aspect-ratio: 9/16; border-radius: var(--radius); overflow: hidden; border: 1px solid rgba(212,165,116,.18); position: relative; background: var(--rich-black);">
+          <img src="/media/images/pool-night.jpg" alt="Costa's rooftop night" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+          <div style="position:absolute;inset:0;display:grid;place-items:center;background:rgba(10,7,5,.45);">
+            <a href="https://www.facebook.com/costaslifestylelounge" target="_blank" rel="noopener" style="width:64px;height:64px;border-radius:50%;background:rgba(212,165,116,.9);display:grid;place-items:center;color:var(--black);font-size:1.5rem;text-decoration:none;">▶</a>
+          </div>
+        </div>
+        <div style="aspect-ratio: 9/16; border-radius: var(--radius); overflow: hidden; border: 1px solid rgba(212,165,116,.18); position: relative; background: var(--rich-black);">
+          <img src="/media/images/mogodu-monday.jpg" alt="Costa's restaurant food" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+          <div style="position:absolute;inset:0;display:grid;place-items:center;background:rgba(10,7,5,.45);">
+            <a href="https://www.tiktok.com/discover/costas-lifestyle-lounge" target="_blank" rel="noopener" style="width:64px;height:64px;border-radius:50%;background:rgba(212,165,116,.9);display:grid;place-items:center;color:var(--black);font-size:1.5rem;text-decoration:none;">▶</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="center-text" style="margin-top: 2rem; font-size: .9rem; color: var(--muted);">More clips on our <a href="https://www.facebook.com/costaslifestylelounge" class="gold" target="_blank" rel="noopener">Facebook</a> and <a href="https://www.tiktok.com/discover/costas-lifestyle-lounge" class="gold" target="_blank" rel="noopener">TikTok</a>.</p>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" aria-hidden="true">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close">✕</button>
+      <span class="lightbox-tag"></span>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section class="cta-strip">
+    <div class="container reveal">
+      <span class="eyebrow" style="padding-left: 0;">See It For Yourself</span>
+      <h2>Photos can only show <em class="italic-display gold">so much</em>.</h2>
+      <p>The atmosphere, the energy, the people — Costa's is best experienced in person.</p>
+      <div class="cta-actions">
+        <a href="https://wa.me/27630501133" class="btn btn-whatsapp">Chat on WhatsApp</a>
+        <a href="contact.html" class="btn btn-outline-gold">Plan Your Visit</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">Costa's <em>Lifestyle</em> Lounge</div>
+          <p class="footer-tagline">"It's not a Party, it's a Celebration!"</p>
+          <p style="font-size: .9rem; margin-top: 1rem;">Postmasburg's premium lounge, rooftop &amp; event venue.</p>
+          <div class="socials">
+            <a href="https://www.facebook.com/costaslifestylelounge" target="_blank" rel="noopener">f</a>
+            <a href="https://www.instagram.com/explore/locations/costaslifestylelounge" target="_blank" rel="noopener">◎</a>
+            <a href="https://www.tiktok.com/discover/costas-lifestyle-lounge" target="_blank" rel="noopener">♪</a>
+            <a href="https://wa.me/27630501133" target="_blank" rel="noopener">✉</a>
+          </div>
+        </div>
+        <div>
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="restaurant.html">Restaurant &amp; Bar</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="venue-hire.html">Venue Hire</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Visit</h5>
+          <ul>
+            <li>227 Matsoabane St,</li>
+            <li>Boichoko, Postmasburg</li>
+            <li>Northern Cape, 8420</li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="tel:+27630501133">063 050 1133</a></li>
+            <li><a href="https://wa.me/27630501133">WhatsApp Us</a></li>
+            <li><a href="contact.html">Booking Form</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Costa's Lifestyle Lounge. All rights reserved.</span>
+        <span>Crafted with <em>★</em> in the Northern Cape.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/27630501133" class="whatsapp-float" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+  <script src="js/main.js"></script>
+</body>
+</html>

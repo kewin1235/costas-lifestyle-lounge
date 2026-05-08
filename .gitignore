@@ -1,0 +1,15 @@
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
+.cache/
+.netlify/
+.vercel/
+*.swp
+*.swo
+.env
+.env.local
+
+# Large media — deploy via Netlify drop, not git
+media/videos/
+public/
